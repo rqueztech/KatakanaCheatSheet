@@ -170,8 +170,11 @@ document.addEventListener("DOMContentLoaded", function() {
 		hiraganaOuter.classList.add("similar-container");
 		for (const individualHiragana of hiraganaArrays) {
 			const hiraganaDiv = document.createElement("div");
+			let convertedValue = "";
 			hiraganaDiv.classList.add("character-div");
-			hiraganaDiv.setAttribute("data-tooltip", String.fromCharCode(individualHiragana.charCodeAt(individualHiragana) + 96));
+			for (const char of individualHiragana) {
+				hiraganaDiv.setAttribute("data-tooltip", String.fromCharCode(individualHiragana.charCodeAt(individualHiragana) + 96));
+			}
 			hiraganaDiv.innerHTML = individualHiragana + hiraganaMap[individualHiragana];
 			hiraganaOuter.append(hiraganaDiv);
 		}
