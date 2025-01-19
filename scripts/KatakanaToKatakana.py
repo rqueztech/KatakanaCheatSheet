@@ -186,3 +186,6 @@ for character in turnToHiragana:
         turnToHiragana = turnToHiragana.replace(character, chr(ord(character) - 96))
 
 print(turnToHiragana)
+
+with open("../js/hiraganascript.js", "w", encoding="utf-8") as file:
+    file.write(turnToHiragana)
