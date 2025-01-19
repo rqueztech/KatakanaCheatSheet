@@ -18,7 +18,7 @@
 	border: solid 1px white;
 }
 
-.katakana-div {
+.character-div {
 	font-size: 400%;
 	width: 30%;
 	text-align: center;
@@ -26,7 +26,7 @@
 	background-color: red;
 	color: black;
 }
-.katakana-div:hover {
+.character-div:hover {
 	font-size: 400%;
 	width: 30%;
 	text-align: center;
