@@ -169,7 +169,7 @@ document.addEventListener("DOMContentLoaded", function() {
 		katakanaOuter.classList.add("similar-container");
 		for (const individualKatakana of katakanaArrays) {
 			const katakanaDiv = document.createElement("div");
-			katakanaDiv.classList.add("katakana-div");
+			katakanaDiv.classList.add("character-div");
 			katakanaDiv.innerHTML = individualKatakana + katakanaMap[individualKatakana];
 			katakanaOuter.append(katakanaDiv);
 		}
