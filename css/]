@@ -4,25 +4,8 @@
 }
 
 #header-container {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
 	background-color: black;
 	color: white;
-}
-
-#romanized {
-	color: white;
-}
-
-#header-container a {
-	color: white;
-	text-decoration: none;
-}
-
-#header-container li {
-	font-size: 400%;
-	list-style: none;
 }
 
 .main-container {
@@ -30,16 +13,6 @@
 	flex-wrap: wrap;
 	flex-direction: row;
 	justify-content: center;
-}
-
-#katakana {
-	background-color: red;
-	color: black;
-}
-
-#hiragana {
-	background-color: red;
-	color: black;
 }
 
 .similar-container {
@@ -52,9 +25,6 @@
 }
 
 .character-div {
-	position: relative;
-	display: inline-block;
-	cursor: pointer;
 	font-size: 400%;
 	width: 30%;
 	text-align: center;
@@ -63,15 +33,10 @@
 	color: black;
 }
 .character-div:hover {
+	font-size: 400%;
+	width: 30%;
+	text-align: center;
+	border: solid 1px white;
 	background-color: black;
 	color: white;
-}
-.character-div::after {
-	content: attr(data-tooltip);
-	visibility: hidden;
-}
-
-.character-div:hover::after {
-	visibility: visible;
-	opacity: 1;
 }
