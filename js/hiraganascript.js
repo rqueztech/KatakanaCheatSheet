@@ -164,13 +164,15 @@ const hiraganaPairings = [
 
 document.addEventListener("DOMContentLoaded", function() {
 	const mainContainer = document.getElementById("main-container");
+	const headerContainer = document.createElement("header");
 	for (const hiraganaArrays of hiraganaPairings) {
 		const hiraganaOuter = document.createElement("div");
 		hiraganaOuter.classList.add("similar-container");
-		for (const individualKatakana of hiraganaArrays) {
+		for (const individualHiragana of hiraganaArrays) {
 			const hiraganaDiv = document.createElement("div");
 			hiraganaDiv.classList.add("character-div");
-			hiraganaDiv.innerHTML = individualKatakana + hiraganaMap[individualKatakana];
+			hiraganaDiv.setAttribute("data-tooltip", String.fromCharCode(individualHiragana.charCodeAt(individualHiragana) + 96));
+			hiraganaDiv.innerHTML = individualHiragana + hiraganaMap[individualHiragana];
 			hiraganaOuter.append(hiraganaDiv);
 		}
 		mainContainer.append(hiraganaOuter);
