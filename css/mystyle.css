@@ -1,0 +1,36 @@
+* {
+	padding: 0px;
+	margin: 0px;
+}
+.main-container {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.similar-container {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: center;
+	background-color: black;
+	border: solid 1px white;
+}
+
+.katakana-div {
+	font-size: 400%;
+	width: 30%;
+	text-align: center;
+	border: solid 1px white;
+	background-color: red;
+	color: black;
+}
+.katakana-div:hover {
+	font-size: 400%;
+	width: 30%;
+	text-align: center;
+	border: solid 1px white;
+	background-color: black;
+	color: white;
+}
