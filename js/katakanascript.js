@@ -168,8 +168,13 @@ document.addEventListener("DOMContentLoaded", function() {
 		const katakanaOuter = document.createElement("div");
 		katakanaOuter.classList.add("similar-container");
 		for (const individualKatakana of katakanaArrays) {
+			let convertedValue = "";
 			const katakanaDiv = document.createElement("div");
 			katakanaDiv.classList.add("character-div");
+			for (const char of individualKatakana) {
+				convertedValue += String.fromCharCode(char.charCodeAt(0) - 96);
+			}
+			katakanaDiv.setAttribute("data-tooltip", convertedValue);
 			katakanaDiv.innerHTML = individualKatakana + katakanaMap[individualKatakana];
 			katakanaOuter.append(katakanaDiv);
 		}
